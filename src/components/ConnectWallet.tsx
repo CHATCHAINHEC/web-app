@@ -1,12 +1,9 @@
-import React, { Dispatch, SetStateAction, useState, useEffect } from "react";
+import React, { Dispatch, SetStateAction, useEffect } from "react";
 import { TezosToolkit } from "@taquito/taquito";
 import { BeaconWallet } from "@taquito/beacon-wallet";
-import {
-  NetworkType,
-  BeaconEvent,
-  defaultEventCallbacks,
-} from "@airgap/beacon-dapp";
-
+import { NetworkType } from "@airgap/beacon-dapp";
+import { Button,  Icon } from "@chakra-ui/react";
+import { FaWallet } from "react-icons/fa";
 type ButtonProps = {
   Tezos: TezosToolkit;
   setContract: Dispatch<SetStateAction<any>>;
